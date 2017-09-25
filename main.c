@@ -1,46 +1,6 @@
 // sfoview by Kapoera
 
 // TODO: Test non-unicode .sfos and files with utf8special type variables
-// 
-
-/*
-
-Good keys:
-
-0x00000104
-0x0000010c
-0x00000116
-0x0000011f
-0x0000012a
-0x00000135
-0x00000140
-0x0000014f
-0x0000015d
-0x0000016d
-0x00000179
-0x0000018b
-0x00000192
-0x00000198
-0x000001a1
-
-Good values:
-0x000001ac
-0x000001b4
-0x000001b8
-0x000001bc
-0x000001ec
-0x000001f0
-0x000001f4
-0x000001f8
-0x00000200
-0x00000204
-0x00000404
-0x00000408
-0x0000043c
-0x000004bc
-0x000004c8
-
-*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -89,7 +49,7 @@ typedef struct{
 enum {
 	integer		= 0x0404,
 	utf8		= 0x0204,
-	special	= 0x0004
+	special		= 0x0004
 } data_format_t;
 
 #define		SFO_SIGNATURE	0x46535000	// hex code for " PSF"
